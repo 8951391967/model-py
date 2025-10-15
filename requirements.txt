@@ -4,5 +4,5 @@ torch.nn
 matplotlib
 pandas
 numpy
-scikit-learn
+sklearn
 joblib
