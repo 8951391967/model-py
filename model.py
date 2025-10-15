@@ -12,7 +12,7 @@ from sklearn.model_selection import train_test_split
 # data taking
 
 
-data  = pd.read_csv("C:\\Users\\mohit\\OneDrive\\Desktop\\diabetes.csv")
+data  = pd.read_csv("diabetes.csv")
 
 
 # data sorting, remove the zero in independent vari and standerdise them 
