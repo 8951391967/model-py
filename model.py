@@ -135,7 +135,9 @@ class linearregression():
             
 
     def probict(self ,X,  threshold= 0.5):
-            return (self.pridict_prob(X) >= threshold).astype(int)
+            probabilities = self.pridict_prob(X)  # make sure this returns probabilities
+            return (probabilities >= threshold).astype(int)
+            
 
 
 model = linearregression()
