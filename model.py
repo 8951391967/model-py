@@ -131,7 +131,10 @@ class linearregression():
 # initalisng
     def pridict_prob(self , X):
             z = np.dot(X, self.w) + self.b
-            return self.sigmoid(z)
+            probs_class1 = self.sigmoid(z)         # probability of class 1
+            probs_class0 = 1 - probs_class1        # probability of class 0
+            return np.c_[probs_class0, probs_class1]
+           
             
 
     def probict(self ,X,  threshold= 0.5):
