@@ -42,7 +42,7 @@ if st.button("Predict"):
 
     # Predict
     pred = model.probict(X_user_scaled)
-    prob = model.pridict_prob(X_user_scaled)[0,1]
+    prob = model.pridict_prob(X_user_scaled)[:,1]
 
     if pred[0] == 1:
         st.write(f"The model predicts **Diabetes** with probability {prob[0]:.2f}")
